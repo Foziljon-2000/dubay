@@ -1,0 +1,1869 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+@mixin xr {
+  @media (max-width: 391px) {
+    @content;
+  }
+}
+.contener {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  .obshi1 {
+    width: 100%;
+    background-color: #fcfcfc;
+    .navbar {
+      .list {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        @include xr {
+          width: 90%;
+        }
+        .nomer {
+          display: flex;
+          gap: 15px;
+          @include xr {
+            display: none;
+          }
+        }
+        .nomer h1 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: #000000;
+        }
+      }
+      .list ul {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        @include xr {
+          display: none;
+        }
+      }
+      .list p {
+        @include xr {
+          font-size: 20px;
+          span {
+            font-size: 22px;
+          }
+        }
+        span {
+          color: #ff005c;
+          font-weight: 800;
+          font-size: 26px;
+          line-height: 32px;
+        }
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;
+      }
+      .palasa {
+        display: none;
+        @include xr {
+          display: block;
+        }
+      }
+    }
+    .shapca {
+      display: flex;
+      width: 85%;
+      margin-left: 15%;
+      @include xr {
+        width: 95%;
+        margin-left: 5%;
+      }
+      .foto {
+        @include xr {
+          display: none;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include xr {
+          background-image: url(./Картинка.svg);
+          height: 70vh;
+          background-repeat: no-repeat;
+        }
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 59px;
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+        @include xr {
+          width: 70%;
+        }
+      }
+      p {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+      }
+      button {
+        transition: 1.5s;
+        background: #ff005c;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.25);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        border: #ff005c;
+        width: 220px;
+        height: 50px;
+      }
+      button:hover {
+        background: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
+        color: #e6d138;
+      }
+    }
+  }
+  .obshi2 {
+    background-color: #ffffff;
+    .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 6%;
+      @include xr {
+        padding-top: 25%;
+        padding-bottom: 15%;
+      }
+    }
+    .cheklict:hover > :not(:hover) {
+      opacity: 0.4;
+      box-shadow: 0px 0px 30px rgba(236, 61, 12, 0.669);
+    }
+    .cheklict {
+      display: grid;
+      grid-template-columns: repeat(auto-fit(8rem, 1fr));
+      grid: auto rows 3rem;
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      @include xr {
+        width: 100%;
+      }
+      .chek1 {
+        @include xr {
+          width: 90%;
+          margin: auto;
+        }
+        margin-top: 5%;
+        width: 30%;
+        background: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        .chek1img {
+          border-bottom: 2px solid #bfe0ff;
+          img {
+            padding-left: 8%;
+            padding-top: 8%;
+            padding-bottom: 8%;
+          }
+        }
+        .chek1text {
+          h1 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 135%;
+            color: #000000;
+            text-align: center;
+          }
+          p {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            text-align: center;
+            padding-bottom: 10%;
+          }
+        }
+      }
+      .chek2 {
+        @include xr {
+          display: none;
+        }
+        margin-top: 5%;
+        width: 30%;
+        background: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        .chek1img {
+          border-bottom: 2px solid #bfe0ff;
+          img {
+            padding-left: 8%;
+            padding-top: 8%;
+            padding-bottom: 8%;
+          }
+        }
+        .chek1text {
+          h1 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 135%;
+            color: #000000;
+            text-align: center;
+          }
+          p {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            text-align: center;
+            padding-bottom: 10%;
+          }
+        }
+      }
+      .chek3 {
+        @include xr {
+          display: none;
+        }
+        margin-top: 5%;
+        width: 30%;
+        background: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        .chek1img {
+          border-bottom: 2px solid #bfe0ff;
+          img {
+            padding-left: 8%;
+            padding-top: 8%;
+            padding-bottom: 8%;
+          }
+        }
+        .chek1text {
+          h1 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 135%;
+            color: #000000;
+            text-align: center;
+          }
+          p {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            text-align: center;
+            padding-bottom: 10%;
+          }
+        }
+      }
+    }
+    .buleti {
+      @include xr {
+        padding-top: 10%;
+        padding-bottom: 30%;
+        width: 40%;
+        margin: auto;
+      }
+      padding-top: 2%;
+      padding-bottom: 6%;
+      width: 7%;
+      margin: auto;
+      .bulet1 {
+        display: block;
+        @include xr {
+          display: none;
+        }
+      }
+      .bulet2 {
+        display: none;
+        @include xr {
+          display: block;
+        }
+      }
+    }
+    .remont {
+      @include xr {
+        width: 99%;
+        margin: auto;
+      }
+      width: 26%;
+      margin: auto;
+      padding-bottom: 2%;
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 135%;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+    .uslugi {
+      @include xr {
+        flex-direction: column;
+        width: 90%;
+      }
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .usluga1 {
+        @include xr {
+          height: 40vh;
+          margin: 5% auto;
+          width: 100%;
+        }
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .uslugatext1 {
+          display: none;
+          @include xr {
+            display: block;
+            p {
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 135%;
+              color: #000000;
+              padding-left: 16%;
+              padding-top: 6%;
+              z-index: 2;
+            }
+          }
+        }
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 42.8%;
+          left: 58.2%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .remont2 {
+          display: none;
+          @include xr {
+            display: block;
+            position: absolute;
+            top: 1%;
+            bottom: 1%;
+            left: 56%;
+            right: 1%;
+          }
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          z-index: 2;
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          .verx {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 25%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          display: grid;
+          grid-template-columns: 46px 1fr 1px 1fr 75px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 54px;
+          @include xr {
+            display: none;
+          }
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #ff005c;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+      .usluga2 {
+        @include xr {
+          height: 10vh;
+          margin: 5% auto;
+          width: 100%;
+        }
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 27.2%;
+          left: 28.9%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          z-index: 2;
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 25%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 60px 1fr 0px 1fr 85px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 54px;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .uslugi1 {
+      @include xr {
+        flex-direction: column;
+        width: 90%;
+      }
+      width: 70%;
+      margin: 2% auto;
+      display: flex;
+      justify-content: space-between;
+      .usluga1 {
+        @include xr {
+          margin: 5% auto;
+          width: 100%;
+          height: 10vh;
+        }
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 42.9%;
+          left: 36.2%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          z-index: 2;
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 25%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 46px 1fr 1px 1fr 75px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 54px;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+      .usluga2 {
+        @include xr {
+          margin: 5% auto;
+          width: 100%;
+          height: 10vh;
+        }
+        height: 280px;
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 0;
+          left: 44.9%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          z-index: 2;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 55%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 45px 1fr 41px 1fr 40px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 54px;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .uslugi2 {
+      @include xr {
+        flex-direction: column;
+        width: 90%;
+      }
+      width: 70%;
+      margin: 2% auto;
+      display: flex;
+      justify-content: space-between;
+      .usluga1 {
+        @include xr {
+          margin: 5% auto;
+          width: 100%;
+          height: 10vh;
+        }
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 0%;
+          left: -58.5%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          z-index: 2;
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 55%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+            .displauimg {
+              z-index: 2;
+            }
+          }
+          .displauimg {
+            z-index: 2;
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 46px 1fr 1px 1fr 65px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 15px 1fr;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 2;
+            grid-row: 8;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #ff005c;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+      .usluga2 {
+        @include xr {
+          margin: 5% auto;
+          width: 100%;
+          height: 10vh;
+        }
+        height: 280px;
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 13.5%;
+          left: 47.3%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 14%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 45px 1fr 0px 1fr 45px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 35px;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .uslugi3 {
+      @include xr {
+        flex-direction: column;
+        width: 90%;
+      }
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .usluga1 {
+        @include xr {
+          margin: 5% auto;
+          width: 100%;
+          height: 8vh;
+        }
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 40.8%;
+          left: 52.2%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 10px;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 25%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 46px 1fr 1px 1fr 75px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 54px;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+      .usluga2 {
+        @include xr {
+          margin: 5% auto;
+          width: 100%;
+          height: 10vh;
+        }
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        width: 48%;
+        .remont {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: 0%;
+          left: 68.6%;
+          right: 11%;
+          bottom: 10%;
+          z-index: 1;
+        }
+        .displau {
+          @include xr {
+            margin-top: 5%;
+          }
+          padding-top: 2%;
+          width: 90%;
+          margin: auto;
+          display: flex;
+          gap: 9px;
+          .niz {
+            display: none;
+            @include xr {
+              display: block;
+              margin-left: 25%;
+            }
+          }
+          .displaeutext {
+            z-index: 2;
+            h1 {
+              padding-top: 2%;
+              font-family: "Open Sans", sans-serif;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              color: #000000;
+            }
+          }
+        }
+        .uslugatext {
+          @include xr {
+            display: none;
+          }
+          display: grid;
+          grid-template-columns: 60px 1fr 0px 1fr 85px;
+          grid-template-rows: 35px 1fr 15px 1fr 15px 1fr 35px;
+          .ne {
+            grid-column: 2;
+            grid-row: 2;
+            grid-column: 2;
+            grid-row: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .tar {
+            grid-column: 2;
+            grid-row: 4;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .nee {
+            grid-column: 2;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .not {
+            grid-column: 4;
+            grid-row: 2;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .rab {
+            grid-column: 4;
+            grid-row: 4;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+          .plov {
+            grid-column: 4;
+            grid-row: 6;
+            z-index: 2;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  .brendi {
+    width: 100%;
+    .brend {
+      @include xr {
+        width: 98%;
+        margin: auto;
+      }
+      width: 25%;
+      margin: auto;
+      padding-top: 5%;
+      padding-bottom: 3%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 135%;
+      text-transform: uppercase;
+      color: #000000;
+      font-family: "Open Sans", sans-serif;
+    }
+    .brendi1 {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      @include xr {
+        flex-direction: column;
+        width: 50%;
+      }
+      .bren1 {
+        @include xr {
+          margin-top: 10%;
+        }
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hnuav {
+        @include xr {
+          margin-top: 10%;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 100px;
+        img {
+          width: 263px;
+        }
+      }
+    }
+    .brendi2 {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      @include xr {
+        display: none;
+      }
+      .bren1 {
+        margin-top: 3%;
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .vrema {
+      display: none;
+      width: 65%;
+      margin: 10% auto 20%;
+      @include xr {
+        display: block;
+      }
+      button {
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        padding: 16px 24px;
+        margin: 20px;
+        width: 220px;
+        height: 50px;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #0085ff;
+        border: 2px solid #0085ff;
+        border-radius: 8px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      button:before {
+        content: "";
+        position: absolute;
+        background-color: #0085ff;
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+      button:hover {
+        color: white;
+      }
+      button:before {
+        top: -30;
+        left: 100%;
+      }
+      button:active:before {
+        background-color: #3a0ca3;
+        transition: 0s;
+      }
+    }
+  }
+  .otziv {
+    width: 70%;
+    margin: auto;
+    @include xr {
+      width: 90%;
+      margin: auto;
+    }
+    .realen {
+      width: 40%;
+      margin: 15% auto 10%;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 135%;
+      text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
+      color: #000000;
+      @include xr {
+        display: none;
+      }
+    }
+    .coment {
+      display: flex;
+      justify-content: space-between;
+      @include xr {
+        display: none;
+      }
+      .coment1 {
+        width: 48%;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        .roman {
+          margin-top: 3%;
+          margin-left: 5%;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          .romanh1 {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 135%;
+            color: #000000;
+          }
+        }
+        .zvezda {
+          margin-top: 3%;
+          margin-left: 5%;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .dogovor {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #545454;
+            span {
+              color: #ff005c;
+            }
+          }
+          .data {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            color: #545454;
+            span {
+              color: #ff005c;
+            }
+          }
+        }
+        .procol {
+          width: 90%;
+          margin: 5% auto 5%;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 165%;
+          color: #0d0d0d;
+          font-family: "Open Sans", sans-serif;
+        }
+        .yandex {
+          display: flex;
+          width: 90%;
+          margin: 0 auto 5%;
+          align-items: center;
+          .yandextext {
+            span {
+              color: #ff005c;
+            }
+          }
+        }
+      }
+    }
+    .ppp {
+      width: 8%;
+      margin: 3% auto 5%;
+      @include xr {
+        display: none;
+      }
+    }
+    .viotziv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include xr {
+        display: none;
+      }
+      .ynotziv {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        background-color: white;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+        margin-bottom: 5%;
+        .ynotziv1 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 18px;
+          color: #000000;
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          font-family: "Open Sans", sans-serif;
+        }
+      }
+      .svou {
+        margin-bottom: 5%;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        button {
+          color: #ffffff;
+          width: 200px;
+          height: 50px;
+          background: #ff005c;
+          border: #ff005c;
+          box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.25);
+        }
+      }
+    }
+    .actciy {
+      margin: auto;
+      .aktual {
+        margin: 1% auto 10%;
+        width: 33%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 135%;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: "Open Sans", sans-serif;
+        @include xr {
+          width: 100%;
+          margin: auto;
+          height: 10vh;
+        }
+      }
+      .zatceni {
+        background: linear-gradient(180deg, #fdfdfd 0%, #f6f6f8 100%);
+        position: relative;
+        .reletiv {
+          @include xr {
+            display: none;
+          }
+          position: absolute;
+          top: -2%;
+          left: 53%;
+          z-index: 0;
+          //   z-index: 2;
+        }
+        .lboy {
+          @include xr {
+            display: none;
+          }
+          display: flex;
+          z-index: 3;
+          z-index: 3;
+          .zamena {
+            z-index: 3;
+            padding-top: 5%;
+            padding-bottom: 14%;
+            width: 321px;
+            height: 80px;
+            left: 241px;
+            top: 4207px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 165%;
+            font-family: "Open Sans", sans-serif;
+            color: #000000;
+            button {
+              margin-top: 10%;
+              width: 286px;
+              height: 50px;
+              background: #ff005c;
+              box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.25);
+              border: #ff005c;
+              color: white;
+            }
+            span {
+              color: #000;
+              font-weight: 800;
+            }
+          }
+          .sena1 {
+            z-index: 3;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 135%;
+            margin-left: 5%;
+            margin-top: 4%;
+            span {
+              font-size: 72px;
+              line-height: 135%;
+              color: #ff005c;
+            }
+            .pppp {
+              width: 50%;
+              display: flex;
+              align-items: center;
+              p {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 8px;
+                line-height: 18px;
+                font-family: "Open Sans", sans-serif;
+                color: #797979;
+              }
+              .pppppimg {
+                margin-left: 7%;
+              }
+            }
+          }
+        }
+        .zameni {
+          font-family: "Open Sans", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 135%;
+          text-transform: uppercase;
+          color: #000000;
+          @include xr {
+            display: none;
+          }
+        }
+      }
+    }
+    .naaa {
+      display: none;
+      @include xr {
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 237%;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 5%;
+        height: 10vh;
+      }
+    }
+    .neaaa {
+      display: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 165%;
+      color: #000000;
+      @include xr {
+        display: block;
+        height: 20vh;
+      }
+    }
+    .fonn {
+      display: none;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 135%;
+      font-family: "Open Sans", sans-serif;
+      h1 {
+        span {
+          color: #f64d4d;
+        }
+      }
+      button {
+        margin-top: 20%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        background-color: #ff005c;
+        box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.25);
+        border: #f64d4d;
+        width: 286px;
+        height: 50px;
+      }
+      @include xr {
+        background-image: url(./image\ 44.svg);
+        width: 100%;
+        height: 20vh;
+        display: block;
+        span {
+          color: #ff005c;
+        }
+        h1 {
+        }
+      }
+    }
+  }
+}
